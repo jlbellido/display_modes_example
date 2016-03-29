@@ -1,0 +1,19 @@
+add tapa entities:
+  title: 'Create new Tapa entities'
+
+administer tapa entities:
+  title: 'Administer Tapa entities'
+  description: 'Allow to access the administration form to configure Tapa entities.'
+  restrict access: true
+
+delete tapa entities:
+  title: 'Delete Tapa entities'
+
+edit tapa entities:
+  title: 'Edit Tapa entities'
+
+view published tapa entities:
+  title: 'View published Tapa entities'
+
+view unpublished tapa entities:
+  title: 'View unpublished Tapa entities'

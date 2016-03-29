@@ -1,0 +1,5 @@
+entity.tapa.add_form:
+  route_name: entity.tapa.add_form
+  title: 'Add Tapa'
+  appears_on:
+    - entity.tapa.collection

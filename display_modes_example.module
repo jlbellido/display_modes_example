@@ -3,3 +3,18 @@
  * @file Contains the hook implementations for display_modes_example module.
  */
 
+
+/**
+ * Implements hook_theme().
+ */
+function display_modes_example_theme($existing, $type, $theme, $path) {
+  $themes = [];
+
+  $themes['tapa'] = array(
+    'render element' => 'elements',
+    'file' => 'tapa.page.inc',
+    'template' => 'tapa',
+  );
+
+  return $themes;
+}
