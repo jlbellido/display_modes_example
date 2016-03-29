@@ -1,0 +1,4 @@
+name: 'Display modes example'
+description: 'Example module that show how to use display modes in Drupal 8'
+type: module
+core: 8.x
