@@ -24,13 +24,14 @@ use Drupal\user\UserInterface;
  *   id = "tapa",
  *   label = @Translation("Tapa"),
  *   handlers = {
- *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
+ *     "view_builder" = "Drupal\display_modes_example\TapaViewBuilder",
  *     "list_builder" = "Drupal\display_modes_example\TapaListBuilder",
  *     "views_data" = "Drupal\display_modes_example\Entity\TapaViewsData",
  *
  *     "form" = {
  *       "default" = "Drupal\display_modes_example\Form\TapaForm",
  *       "add" = "Drupal\display_modes_example\Form\TapaForm",
+ *       "suggested_tapa_form" = "Drupal\display_modes_example\Form\TapaForm",
  *       "edit" = "Drupal\display_modes_example\Form\TapaForm",
  *       "delete" = "Drupal\display_modes_example\Form\TapaDeleteForm",
  *     },

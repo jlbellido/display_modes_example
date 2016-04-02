@@ -3,3 +3,8 @@ entity.tapa.add_form:
   title: 'Add Tapa'
   appears_on:
     - entity.tapa.collection
+entity.tapa.suggested_tapa_form:
+  route_name: entity.tapa.suggested_tapa_form
+  title: 'Add Tapa suggestion'
+  appears_on:
+    - entity.tapa.collection
