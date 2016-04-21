@@ -22,7 +22,11 @@ class TapaForm extends ContentEntityForm {
   public function buildForm(array $form, FormStateInterface $form_state) {
     /* @var $entity \Drupal\display_modes_example\Entity\Tapa */
     $form = parent::buildForm($form, $form_state);
-    $entity = $this->entity;
+
+    $display = $this->getFormDisplay($form_state);
+    if ($display->getComponent('common_text_form')) {
+      $form['common_text_form']['#markup'] = t('Common text form');
+    }
 
     return $form;
   }
