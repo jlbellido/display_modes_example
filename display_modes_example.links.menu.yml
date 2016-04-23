@@ -1,0 +1,13 @@
+# Tapa menu items definition
+entity.tapa.collection:
+  title: 'Tapa list'
+  route_name: entity.tapa.collection
+  description: 'List Tapa entities'
+  parent: system.admin_structure
+  weight: 100
+
+tapa.admin.structure.settings:
+  title: Tapa settings
+  description: 'Configure Tapa entities'
+  route_name: tapa.settings
+  parent: system.admin_structure

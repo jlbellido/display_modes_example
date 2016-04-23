@@ -1,0 +1,21 @@
+# Tapa routing definition
+tapa.settings_tab:
+  route_name: tapa.settings
+  title: 'Settings'
+  base_route: tapa.settings
+entity.tapa.canonical:
+  route_name: entity.tapa.canonical
+  base_route: entity.tapa.canonical
+  title: 'View'
+
+entity.tapa.edit_form:
+  route_name: entity.tapa.edit_form
+  base_route: entity.tapa.canonical
+  title: Edit
+
+entity.tapa.delete_form:
+  route_name:  entity.tapa.delete_form
+  base_route:  entity.tapa.canonical
+  title: Delete
+  weight: 10
+

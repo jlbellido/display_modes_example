@@ -1,0 +1,51 @@
+<?php
+/**
+ * @file Contains the hook implementations for display_modes_example module.
+ */
+
+
+/**
+ * Implements hook_theme().
+ */
+function display_modes_example_theme($existing, $type, $theme, $path) {
+  $themes = [];
+
+  $themes['tapa'] = array(
+    'render element' => 'elements',
+    'file' => 'tapa.page.inc',
+    'template' => 'tapa',
+  );
+
+  $themes['common_text'] = array(
+    'variables' => [
+      'text' => '',
+    ],
+    'file' => 'tapa.page.inc',
+  );
+
+  return $themes;
+}
+
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function display_modes_example_entity_extra_field_info() {
+  $extra = [];
+
+  $extra['tapa']['tapa']['display']['common_text'] = [
+    'label' => t('Common text'),
+    'description' => t('Common text for Tapas'),
+    'weight' => 0,
+    'visible' => TRUE,
+  ];
+
+  $extra['tapa']['tapa']['form']['common_text_form'] = [
+    'label' => t('Common text Form'),
+    'description' => t('Common text for form Tapas'),
+    'weight' => 0,
+    'visible' => TRUE,
+  ];
+
+  return $extra;
+}
