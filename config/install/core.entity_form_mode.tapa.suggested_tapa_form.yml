@@ -1,0 +1,10 @@
+uuid: 226343d9-af31-4ba3-9900-d0e85c7d3ceb
+langcode: en
+status: true
+dependencies:
+  module:
+    - display_modes_example
+id: tapa.suggested_tapa_form
+label: 'Suggested tapa form'
+targetEntityType: tapa
+cache: true

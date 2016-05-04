@@ -1,0 +1,10 @@
+uuid: 74c86457-9f1a-46fc-be00-c9c8bc612c16
+langcode: en
+status: true
+dependencies:
+  module:
+    - display_modes_example
+id: tapa.highlighted
+label: Highlighted
+targetEntityType: tapa
+cache: true

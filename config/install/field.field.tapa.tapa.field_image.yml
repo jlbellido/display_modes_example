@@ -1,0 +1,38 @@
+uuid: b3501667-7dd0-44a2-8d51-811a3fb975c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.tapa.field_image
+  module:
+    - display_modes_example
+    - image
+id: tapa.tapa.field_image
+field_name: field_image
+entity_type: tapa
+bundle: tapa
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

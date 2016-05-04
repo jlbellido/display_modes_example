@@ -1,0 +1,63 @@
+uuid: 6d2522fa-5761-4676-9e4c-76acad48bfcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.tapa.tapa.field_description
+    - field.field.tapa.tapa.field_image
+    - field.field.tapa.tapa.field_price
+    - image.style.thumbnail
+  module:
+    - display_modes_example
+    - image
+    - text
+id: tapa.tapa.default
+targetEntityType: tapa
+bundle: tapa
+mode: default
+content:
+  common_text_form:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_image:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_price:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

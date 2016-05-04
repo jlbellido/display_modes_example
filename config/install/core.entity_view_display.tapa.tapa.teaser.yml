@@ -1,0 +1,48 @@
+uuid: 4e5f7c14-9a17-459f-b000-c4bdb03dda80
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.tapa.teaser
+    - field.field.tapa.tapa.field_description
+    - field.field.tapa.tapa.field_image
+    - field.field.tapa.tapa.field_price
+    - image.style.medium
+  module:
+    - display_modes_example
+    - image
+    - text
+id: tapa.tapa.teaser
+targetEntityType: tapa
+bundle: tapa
+mode: teaser
+content:
+  common_text:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    type: text_trimmed
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    type: image
+  name:
+    label: hidden
+    type: string
+    weight: 1
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_price: true
+  user_id: true

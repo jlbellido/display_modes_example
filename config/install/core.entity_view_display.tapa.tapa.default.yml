@@ -1,0 +1,52 @@
+uuid: 78e1640f-1d84-412b-8000-eee0b285dd07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.tapa.tapa.field_description
+    - field.field.tapa.tapa.field_image
+    - field.field.tapa.tapa.field_price
+    - image.style.large
+  module:
+    - display_modes_example
+    - image
+    - text
+id: tapa.tapa.default
+targetEntityType: tapa
+bundle: tapa
+mode: default
+content:
+  field_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_price:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  name:
+    label: hidden
+    type: string
+    weight: 1
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  common_text: true
+  user_id: true

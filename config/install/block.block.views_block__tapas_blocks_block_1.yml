@@ -1,0 +1,30 @@
+uuid: 5c448cf4-3646-455e-b400-c373af971336
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.tapas_blocks
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__tapas_blocks_block_1
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:tapas_blocks-block_1'
+settings:
+  id: 'views_block:tapas_blocks-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /tapas
+    negate: false
+    context_mapping: {  }

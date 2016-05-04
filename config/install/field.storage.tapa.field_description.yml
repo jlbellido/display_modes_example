@@ -1,0 +1,19 @@
+uuid: a6082afe-8d42-4815-9900-ec702311a50d
+langcode: en
+status: true
+dependencies:
+  module:
+    - display_modes_example
+    - text
+id: tapa.field_description
+field_name: field_description
+entity_type: tapa
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

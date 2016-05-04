@@ -1,0 +1,38 @@
+uuid: a64f7e10-7b03-4a6d-a200-e6f630859c21
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.tapa.highlighted
+    - field.field.tapa.tapa.field_description
+    - field.field.tapa.tapa.field_image
+    - field.field.tapa.tapa.field_price
+    - image.style.thumbnail
+  module:
+    - display_modes_example
+    - image
+id: tapa.tapa.highlighted
+targetEntityType: tapa
+bundle: tapa
+mode: highlighted
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    type: image
+  name:
+    label: hidden
+    type: string
+    weight: 1
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  common_text: true
+  field_description: true
+  field_price: true
+  user_id: true

@@ -1,0 +1,24 @@
+uuid: ef896d00-5771-4722-af09-9db9458739da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.tapa.field_price
+  module:
+    - display_modes_example
+id: tapa.tapa.field_price
+field_name: field_price
+entity_type: tapa
+bundle: tapa
+label: price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: €
+field_type: float

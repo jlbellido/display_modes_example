@@ -1,0 +1,10 @@
+uuid: 3b2bfe3a-8640-4efa-932a-426df23d6631
+langcode: en
+status: true
+dependencies:
+  module:
+    - display_modes_example
+id: tapa.teaser
+label: Teaser
+targetEntityType: tapa
+cache: true
