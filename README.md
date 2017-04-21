@@ -1,6 +1,6 @@
 # Display modes example
 
-This is a example module for showing how we can define and manage display modes in Drupal 8 during the talk ["Sácale el jugo a los display modes"] at [DrupalCamp Spain Granada 2016]
+This is a example module for showing how we can define and manage display modes in Drupal 8 during the talk ["Get the most out of display modes"]
 
 ## Features
 This module provides the following components and examples:
@@ -22,7 +22,6 @@ This module provides the following components and examples:
 ## Credits
 Author : Jose Luis Bellido Rojas ([jlbellido])
 
-   ["Sácale el jugo a los display modes"]: <http://2016.drupalcamp.es/en/sessions/s%C3%A1cale-el-jugo-los-display-modes>
-   [DrupalCamp Spain Granada 2016]: <http://2016.drupalcamp.es/>
+   ["Get the most out of display modes"]: <http://slides.com/jlbellido/display-modes-drupal-8#/>
    [Slides of the session]: <http://slides.com/jlbellido/display-modes-drupal-8#/>
    [jlbellido]: <https://www.drupal.org/u/jlbellido>
