@@ -23,7 +23,7 @@ class TapaViewBuilder extends EntityViewBuilder  {
       if ($display->getComponent('common_text')) {
         $build[$id]['common_text'] = [
           '#theme' => 'common_text',
-          '#text' => t('Taste this and other awesome Tapas at this DrupalCamp Es!!! '),
+          '#text' => t('Taste this and other awesome Tapas!!! '),
         ];
       }
     }
