@@ -5,3 +5,10 @@ entity.tapa.suggested_tapa_form:
     _title: 'Suggested tapa from'
   requirements:
     _permission: 'edit tapa entities'
+entity.tapa.suggested_tapa_form.edit:
+  path: '/admin/structure/tapa/suggestion/{tapa}/edit'
+  defaults:
+    _entity_form: tapa.suggested_tapa_form
+    _title: 'Suggested tapa from'
+  requirements:
+    _permission: 'edit tapa entities'
